@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import Modal from './components/modal/Modal'
+import Header from './components/header/Header'
+import Nav from './components/nav/Nav'
+import About from './components/about/About'
+import Experience from './components/experience/Experience'
+import Service from './components/service/Service'
+import Portfolio from './components/portfolio/Portfolio'
+import Testimonial from './components/testimonials/Testimonial'
+import Contact from './components/contact/Contact'
+import Footer from './components/footer/Footer'
+import {useState} from "react"
 
-function App() {
+
+
+ const App = () => {
+
+  const [modal, setModal] = useState(true)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div>
+      {modal && <Modal setModal={setModal}/>}
+      <Header/>
+      <Nav />
+      <About />
+      <Experience />
+      <Service />
+      <Portfolio />
+      <Testimonial/>
+      <Contact/>
+      <Footer/>
+
     </div>
-  );
+
+  )
 }
+
 
 export default App;

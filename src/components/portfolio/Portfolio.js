@@ -66,12 +66,12 @@ const Portfolio = () => {
       </article>
       <article className="portfolio_item">
         <div className="portfolio_item-image">
-          <img src="https://i.postimg.cc/G2z0FDy5/graphics-design.jpg" alt="Graphics design/ UI design image" />
+          <img src="https://i.postimg.cc/j2XKLycc/resumesite.jpg" alt="Graphics design/ UI design image" />
         </div>
-        <h3>Graphics | UI Designs Portfolios </h3>
+        <h3> Portfolio Website </h3>
         <div className="portfolio_item-cta">
-        <a href="https://www.instagram.com/dev_collinsabu/" target="_blank" className="btn" target="_blank">UI Designs</a>
-        <a href="https://www.instagram.com/dev_collinsabu/" target="_blank" className="btn btn-primary" target="_blank">Graphics</a>
+        <a href="https://github.com/collinsabu/portfolio" target="_blank" className="btn" target="_blank">Github</a>
+        <a href="https://resume-phi-lemon.vercel.app/" target="_blank" className="btn btn-primary" target="_blank">Live Demo</a>
         </div>
         
       </article>

@@ -29,19 +29,19 @@ const Portfolio = () => {
         </div>
         <h3> Responsive Website Design </h3>
         <div className="portfolio_item-cta">
-        <a href="#" className="btn" target="_blank">Github</a>
-        <a href="#" className="btn btn-primary" target="_blank">Live Demo</a>
+        <a href="https://github.com/collinsabu/Ziprus-Chemicals" className="btn" target="_blank">Github</a>
+        <a href="https://ziprus-chemicals.vercel.app/" className="btn btn-primary" target="_blank">Live Demo</a>
         </div>
       </article>
 
       <article className="portfolio_item">
         <div className="portfolio_item-image">
-          <img src="https://i.postimg.cc/k5K5H3Kz/fitness-App.jpg"  alt="Graphic showcasing a fitness tracker app developed using HTML, CSS, JavaScript, and React, displaying exercise stats, activity tracking, and health metrics for comprehensive fitness progress tracking" />
+          <img src="https://i.postimg.cc/W1Smzs9G/church.jpg"  alt="Graphic showcasing a fitness tracker app developed using HTML, CSS, JavaScript, and React, displaying exercise stats, activity tracking, and health metrics for comprehensive fitness progress tracking" />
         </div>
-        <h3>Fitness Tracker App </h3>
+        <h3>Church Attendance App </h3>
         <div className="portfolio_item-cta">
-        <a href="#" className="btn" target="_blank">Github</a>
-        <a href="#" className="btn btn-primary" target="_blank">Live Demo</a>
+        <a href="https://github.com/collinsabu/churcuAttendance" className="btn" target="_blank">Github</a>
+        <a href="https://churcu-attendance.vercel.app/login" className="btn btn-primary" target="_blank">Live Demo</a>
         </div>
       </article>
       <article className="portfolio_item">
@@ -58,10 +58,10 @@ const Portfolio = () => {
         <div className="portfolio_item-image">
           <img src="https://i.postimg.cc/PrrHFVwK/Finance-App.jpg" alt="Graphic showcasing a finance app developed using HTML, CSS, JavaScript, and React, providing intuitive financial management tools, budget tracking, expense visualization, and secure transaction management for efficient personal finance control." />
         </div>
-        <h3>Finance App </h3>
+        <h3>Shift Manager App </h3>
         <div className="portfolio_item-cta">
-        <a href="#" className="btn" target="_blank">Github</a>
-        <a href="#" className="btn btn-primary" target="_blank">Live Demo</a>
+        <a href="https://github.com/collinsabu/shiftManager" className="btn" target="_blank">Github</a>
+        <a href="https://shift-manager-eight.vercel.app/" className="btn btn-primary" target="_blank">Live Demo</a>
         </div>
       </article>
       <article className="portfolio_item">

@@ -15,7 +15,7 @@ const Experience = () => {
           <article className="experience_details">
           <HiBadgeCheck className="experience_details-icons"/>
             <div>
-            <h4>HTML</h4>
+            <h4>Javascript</h4>
              <small  className="text-light">Experienced</small>
             </div>
               
@@ -25,7 +25,7 @@ const Experience = () => {
           <article className="experience_details">
              <HiBadgeCheck className="experience_details-icons"/> 
              <div>
-             <h4>CSS</h4>
+             <h4>Node Js</h4>
              <small  className="text-light">Intermediate</small>
             </div> 
           </article>
@@ -33,7 +33,7 @@ const Experience = () => {
           <article className="experience_details">
              <HiBadgeCheck className="experience_details-icons"/>  
             <div>
-            <h4>Javascript</h4>
+            <h4>React Native</h4>
              <small  className="text-light">Experienced</small>
             </div>
           </article>
@@ -41,7 +41,7 @@ const Experience = () => {
           <article className="experience_details">
              <HiBadgeCheck className="experience_details-icons"/>  
              <div>
-             <h4>Bootstrap</h4>
+             <h4>Express Js</h4>
              <small  className="text-light">Intermediated</small>
              </div>
           </article>

@@ -29,7 +29,7 @@ const Modal = ({ setModal }) => {
         <AiFillCloseCircle className='modal-close' onClick={(e) => setModal(false)}/>
           <h2>Hi, Would you like to see my </h2>
           <p>Graphics | UI Designs?</p>
-          <a href="https://www.graphics.collinsabu.tech/" className='uidesign'>Graphics</a>
+          <a href="https://grahics-design.vercel.app/" className='uidesign'>Graphics</a>
           <a href="https://www.graphics.collinsabu.tech/" target="_blank" className='graphics'>UI Designs</a>
         </div>
       </div>

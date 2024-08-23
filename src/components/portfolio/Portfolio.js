@@ -17,8 +17,8 @@ const Portfolio = () => {
         </div>
         <h3> Weather App </h3>
         <div className="portfolio_item-cta">
-        <a href="https://github.com/collinsabu/Weather-App" className="btn" target="_blank">Github</a>
-        <a href="https://complet-weather-app.netlify.app/" className="btn btn-primary" target="_blank">Live Demo</a>
+        <a href="https://github.com/collinsabu/weatherApp" className="btn" target="_blank">Github</a>
+        <a href="https://weather-app-beta-ten-17.vercel.app/" className="btn btn-primary" target="_blank">Live Demo</a>
         </div>
         
       </article>
@@ -70,8 +70,8 @@ const Portfolio = () => {
         </div>
         <h3> Portfolio Website </h3>
         <div className="portfolio_item-cta">
-        <a href="https://github.com/collinsabu/portfolio" target="_blank" className="btn" target="_blank">Github</a>
-        <a href="https://resume-phi-lemon.vercel.app/" target="_blank" className="btn btn-primary" target="_blank">Live Demo</a>
+        <a href="https://github.com/collinsabu/portfolio" target="_blank" className="btn" >Github</a>
+        <a href="https://resume-phi-lemon.vercel.app/" target="_blank" className="btn btn-primary" >Live Demo</a>
         </div>
         
       </article>

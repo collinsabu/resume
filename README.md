@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# 💼 Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React-based portfolio website designed to showcase my experience, projects, and skills. The website is structured into several sections, each highlighting different aspects of my professional journey. It includes interactive elements like modals, carousels, and forms to enhance the user experience.
 
-## Available Scripts
+## 📋 Table of Contents
+- [Features](#features)
+  - [Introduction Section](#introduction-section)
+  - [Popup Modal](#popup-modal)
+  - [Portfolio Section](#portfolio-section)
+  - [Testimonials Section](#testimonials-section)
+  - [Contact Section](#contact-section)
+  - [Other Sections](#other-sections)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+  - [Installation](#installation)
+  - [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-In the project directory, you can run:
+## 🌟 Features
 
-### `npm start`
+### Introduction Section
+The introduction section provides a brief overview of who I am and what I do. Key elements include:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Social Media Links:** Icons that link to my various social media profiles, allowing visitors to connect with me across different platforms.
+- **Resume Download Button:** A button that links to a PDF version of my resume hosted on Google Drive, allowing visitors to easily download it.
+- **Contact Anchor Link:** A button that scrolls the page to the contact section, making it easy for visitors to get in touch with me.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Popup Modal
+A popup modal is triggered each time the main component is mounted. The modal includes:
 
-### `npm test`
+- **Link to Graphics/UI Design Website:** A link that directs users to my separate website showcasing my graphics and UI designs. The modal gives users the option to either proceed to the site in a new tab or cancel and continue browsing the portfolio website.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Portfolio Section
+This section displays six of my key projects, each with:
 
-### `npm run build`
+- **GitHub Link:** A button linking to the GitHub repository for the project, allowing visitors to view the source code.
+- **Live Demo Link:** A button that takes visitors to a live demo of the project, showcasing the project in action.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Testimonials Section
+The testimonials section features a carousel that displays feedback from past clients and organizations I've worked with:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Carousel:** Implemented using the Swiper.js library, the carousel displays four different testimonials, allowing users to swipe through the feedback.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Contact Section
+The contact section includes a form that allows visitors to send messages directly to me:
 
-### `npm run eject`
+- **React Form:** The form is hooked up to the Mailjet API to send emails directly to my Gmail and Mailjet accounts.
+- **React Icons:** Various icons are used to enhance the visual appeal of the contact section.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Other Sections
+Additional sections of the website include:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **About Me:** A detailed overview of my background, interests, and career path.
+- **Experience:** A section highlighting my work experience, including job titles, companies, and durations.
+- **Footer:** The footer includes links to relevant pages and additional social media profiles.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🛠️ Technologies Used
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- ![React](https://img.shields.io/badge/React-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) - A JavaScript library for building user interfaces.
+- ![Swiper.js](https://img.shields.io/badge/Swiper.js-%23FF6347.svg?style=for-the-badge&logo=swiper&logoColor=white) - A modern touch slider for implementing the testimonial carousel.
+- ![Mailjet API](https://img.shields.io/badge/Mailjet_API-%23008cdd.svg?style=for-the-badge&logo=mailjet&logoColor=white) - Used for handling the email functionality in the contact form.
+- ![React Icons](https://img.shields.io/badge/React_Icons-%2320232a.svg?style=for-the-badge&logo=react&logoColor=white) - A collection of popular icons used throughout the website.
 
-## Learn More
+## 🚀 Getting Started
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To get started with this portfolio website, follow the steps below:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Installation
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/portfolio-website.git
+   cd portfolio-website

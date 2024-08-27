@@ -18,7 +18,7 @@ const Testimonial = () => {
       {
          avatar: "https://i.postimg.cc/7LCvSf9x/img-test.jpg",
         name: 'Earnest Okafor',
-        review: "I had the pleasure of managing Collins Abu during their time at our company(1960Bet), and I am consistently impressed by his exceptional skills as a frontend developer and Graphics designer. His dedication to delivering high-quality work and his ability to adapt to ever-changing project requirements were truly commendable. Collin's collaborative approach and effective communication skills were invaluable to our team. He consistently went above and beyond, and I wholeheartedly recommend Collins Abu for any frontend development or design projects."   
+        review: "Working with Collins Abu has been an absolute pleasure. As a company in the solid mineral industry, it was essential for us to have a website that not only looked professional but also effectively communicated our services and capabilities to potential clients. Collins delivered exactly that. He designed a user-friendly, visually appealing website using WordPress that has significantly improved our online presence. His expertise in HTML/CSS ensured that the site was both responsive and fast-loading, which is critical for our business. We highly recommend Collins for any business looking to enhance their digital presence"
       },
 
       {

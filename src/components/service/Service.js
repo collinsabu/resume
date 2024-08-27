@@ -80,19 +80,16 @@ const Service = () => {
               <ul className="service_list">
                 <li>
                   <BiCheck className="service_icon"/>
-                  <p>Performance Optimization: Optimizing website performance by improving loading times </p>
+                  <p> Enhance website performance by optimizing loading times, faster and smoother user experience </p>
+                </li>
+                
+                <li>
+                  <BiCheck className="service_icon"/>
+                  <p>Seamlessly integrate modern frameworks like React to build dynamic and interactive applications</p>
                 </li>
                 <li>
                   <BiCheck className="service_icon"/>
-                  <p>Lorem ipsum dolor sit.</p>
-                </li>
-                <li>
-                  <BiCheck className="service_icon"/>
-                  <p>Frontend Framework Integration: Integrating frontend frameworks like React</p>
-                </li>
-                <li>
-                  <BiCheck className="service_icon"/>
-                  <p>Responsive Web Design </p>
+                  <p>Create fully responsive websites that provide an optimal viewing experience across all devices. </p>
                 </li>
 
 

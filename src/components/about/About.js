@@ -51,45 +51,23 @@ const About = () => {
 
             { showFullDescription ? (
                 <>
-               <p> Hello there! I'm Collins Abu, a passionate and versatile frontend developer with a 
-                  keen eye for design. With one year of hands-on experience as a frontend developer
-                   and five years of expertise in graphics and UI design, I bring a unique blend of 
-                   technical and creative skills to the table.
-
-
-                <p>As a frontend developer, I thrive on crafting intuitive and engaging user experiences using 
-                HTML, CSS, JavaScript, and React JS. I enjoy transforming complex ideas into clean, responsive, 
-                and accessible web interfaces that not only meet the client's objectives but also exceed user expectations.
-                My attention to detail and commitment to creating pixel-perfect designs ensure that every website I build 
-                is visually stunning and seamlessly functional across various devices and browsers.</p>
-
-
-              <p>Prior to diving into the world of frontend development, I spent five years honing my skills as a graphics and UI designer. 
-              This background allows me to approach web development from a design-centric perspective, enabling me to create visually appealing
-              layouts and captivating visual elements. My extensive experience in graphic design has given me a deep understanding of color
-                theory, typography, and composition, which I seamlessly incorporate into my frontend development work.</p>
-
-              I am constantly exploring new design trends, staying up-to-date with the latest industry standards and best 
-                practices to deliver modern and innovative solutions. Combining my technical expertise and artistic flair, I 
-                strive to bring ideas to life and deliver remarkable digital experiences that captivate and engage users.</p>
-
-                <p>If you're seeking a frontend developer who can seamlessly blend design and functionality, I'd love to connect with you. 
-                  Let's collaborate and create something exceptional together. </p>
+               <p> I recently expanded my skill set to include UI design using Figma, which complements my development work and ensures that the user interfaces I create 
+                are not only user-friendly but also visually appealing. I've built several projects showcasing my expertise, 
+                which you can explore on my portfolio. </p>
+                <p>I'm now looking for opportunities to join a forward-thinking team where I can contribute my skills as a React/Next.js developer, collaborate with other professionals, and 
+                  continue to grow in my career. If you're looking for someone who is dedicated, detail-oriented, and constantly striving to learn and improve, let's connect!</p>
                 <button onClick={toggleDescription} className="btn btn-primary">Read Less</button>
                 </>  
               ) : (
                 <>
-                <p> Hello there! I'm Collins Abu, a passionate and versatile frontend developer with a 
-                  keen eye for design. With one year of hands-on experience as a frontend developer
-                   and five years of expertise in graphics and UI design, I bring a unique blend of 
-                   technical and creative skills to the table. <br/><br />
+                <p> Hello! I'm Collins Abu, a passionate and skilled Front-End Developer with a strong focus on React and Next.js. Over the years, I have honed my abilities in building 
+                  dynamic and responsive web applications that deliver great user experiences. My journey into web development has been driven by a deep curiosity 
+                  for technology and a desire to create digital solutions that are both functional and aesthetically pleasing. <br/><br />
 
 
-                As a frontend developer, I thrive on crafting intuitive and engaging user experiences using 
-                HTML, CSS, JavaScript, and React JS. I enjoy transforming complex ideas into clean, responsive, 
-                and accessible web interfaces that not only meet the client's objectives but also exceed user expectations.
-                My attention to detail and commitment to creating pixel-perfect designs ensure that every website I build 
-                is visually stunning and seamlessly functional across various devices and browsers...</p>
+                  With a background in graphic design, I bring a unique blend of creativity and technical expertise to every project. My design skills allow me to craft visually compelling interfaces, 
+                  while my knowledge of modern web technologies enables me to implement those designs effectively. I'm proficient in JavaScript, React, Next.js, and have hands-on experience with Node.js
+                   and Express, which allows me to work across the full stack when needed...</p>
                 <button onClick={toggleDescription} className="btn btn-primary">Read More</button>
 
                 </>

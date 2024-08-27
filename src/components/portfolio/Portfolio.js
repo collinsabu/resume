@@ -46,12 +46,12 @@ const Portfolio = () => {
       </article>
       <article className="portfolio_item">
         <div className="portfolio_item-image">
-          <img src="https://i.postimg.cc/VNCYgD6K/music-app.jpg" alt="Graphic showcasing a music app developed using HTML, CSS, JavaScript, and React, offering a seamless user experience, personalized playlists, music recommendations, and comprehensive library management for an immersive music listening experience" />
+          <img src="https://i.postimg.cc/Pf8zHNMk/eccomerce.jpg" alt="Graphic showcasing a e-commerce app developed using HTML, CSS, JavaScript, and React, offering a seamless user experience, personalized playlists, music recommendations, and comprehensive library management for an immersive music listening experience" />
         </div>
-        <h3>Music App </h3>
+        <h3>E-commerce App </h3>
         <div className="portfolio_item-cta">
-        <a href="#" className="btn" target="_blank">Github</a>
-        <a href="#" className="btn btn-primary" target="_blank">Live Demo</a>
+        <a href="https://github.com/collinsabu/ecommerceApp" className="btn" target="_blank">Github</a>
+        <a href="https://ecommerce-app-nine-azure.vercel.app/" className="btn btn-primary" target="_blank">Live Demo</a>
         </div>
       </article>
       <article className="portfolio_item">

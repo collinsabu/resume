@@ -1,24 +1,67 @@
-import "./contact.css"
-import {MdOutlineEmail} from "react-icons/md";
-import {AiOutlineInstagram} from "react-icons/ai";
+import React, { useState } from 'react';
+import axios from 'axios';
+import "./contact.css";
+import { MdOutlineEmail } from "react-icons/md";
+import { AiOutlineInstagram } from "react-icons/ai";
 import { MdWhatsapp } from "react-icons/md";
-import { useRef } from 'react';
-import emailjs from 'emailjs-com'
 
 const Contact = () => {
-  const form = useRef();
-  const sendEmail = (e) => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_yci1xhp', 'template_6otgkyg', form.current, 'e1SwNceJ3bUjokMnk')
- 
-      .then((result) => {
-        e.target.reset()
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
+    const { name, email, message } = formData;
+
+    const data = {
+      Messages: [
+        {
+          From: {
+            Email: "your-email@example.com",
+            Name: "Your Name",
+          },
+          To: [
+            {
+              Email: "graphics.collinsabu01@gmail.com",
+              Name: "Collins Abu",
+            },
+          ],
+          Subject: `New message from ${name}`,
+          TextPart: message,
+          HTMLPart: `<h3>You've got a new message from your portfolio</h3><p><b>Name: </b>${name}</p><p><b>Email: </b>${email}</p><p><b>Message: </b>${message}</p>`,
+        },
+      ],
+    };
+
+    try {
+      const response = await axios.post('https://api.mailjet.com/v3.1/send', data, {
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Basic ${btoa('6160d05a49fa6a7e79b15cc9421fe149:777768315e90810e4e5a40ea868b1889')}`,
+        },
       });
+
+      if (response.status === 200) {
+        alert('Message sent successfully!');
+        setFormData({ name: '', email: '', message: '' });
+      }
+    } catch (error) {
+      console.error('Error sending email', error);
+      alert('There was an error sending your message. Please try again.');
+    }
   };
+
   return (
     <section id="contact">
       <h5>Get In Touch</h5>
@@ -36,7 +79,7 @@ const Contact = () => {
           <article className="contact_option">
             <AiOutlineInstagram className="contact_option-icon"/>
             <h4>Instagram</h4>
-            <h5>See ProJects</h5>
+            <h5>See Projects</h5>
             <a href="https://www.instagram.com/dev_collinsabu/" target="_blank">Send Message</a>
           </article>
 
@@ -49,15 +92,15 @@ const Contact = () => {
         </div>
         {/* END OF CONTACT OPTIONS */}
 
-        <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name="name" placeholder="Full Name" required/>
-          <input type="email" name="email"  placeholder="Enter Email" required/>
-          <textarea name="message" rows="7" placeholder="Your message..." required></textarea>
-          <button type="submit" className="btn btn-primary"> Send Message</button>
+        <form onSubmit={handleSubmit}>
+          <input type="text" name="name" placeholder="Full Name" value={formData.name} onChange={handleChange} required/>
+          <input type="email" name="email" placeholder="Enter Email" value={formData.email} onChange={handleChange} required/>
+          <textarea name="message" rows="7" placeholder="Your message..." value={formData.message} onChange={handleChange} required></textarea>
+          <button type="submit" className="btn btn-primary">Send Message</button>
         </form>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

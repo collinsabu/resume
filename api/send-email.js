@@ -8,8 +8,8 @@ export default async function handler(req, res) {
       Messages: [
         {
           From: {
-            Email: process.env.MAILJET_FROM_EMAIL,  // Store email in env
-            Name: process.env.MAILJET_FROM_NAME,  // Store name in env
+            Email: process.env.MAILJET_FROM_EMAIL,
+            Name: process.env.MAILJET_FROM_NAME,
           },
           To: [
             {
@@ -40,7 +40,7 @@ export default async function handler(req, res) {
         res.status(response.status).json({ error: 'Failed to send email' });
       }
     } catch (error) {
-      console.error('Error sending email:', error);
+      console.error('Error sending email:', error.response ? error.response.data : error.message);
       res.status(500).json({ error: 'There was an error sending your message. Please try again.' });
     }
   } else {

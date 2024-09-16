@@ -1,4 +1,3 @@
-// api/send-email.js (Node.js serverless function for Vercel)
 const axios = require('axios');
 
 export default async function handler(req, res) {
@@ -9,8 +8,8 @@ export default async function handler(req, res) {
       Messages: [
         {
           From: {
-            Email: "your-email@example.com",  // Use your email
-            Name: "Your Name",  // Use your name
+            Email: process.env.MAILJET_FROM_EMAIL,  // Store email in env
+            Name: process.env.MAILJET_FROM_NAME,  // Store name in env
           },
           To: [
             {
@@ -29,7 +28,9 @@ export default async function handler(req, res) {
       const response = await axios.post('https://api.mailjet.com/v3.1/send', data, {
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Basic ${Buffer.from('YOUR_MAILJET_API_KEY:YOUR_MAILJET_API_SECRET').toString('base64')}`,
+          'Authorization': `Basic ${Buffer.from(
+            `${process.env.MAILJET_API_KEY}:${process.env.MAILJET_API_SECRET}`
+          ).toString('base64')}`,
         },
       });
 

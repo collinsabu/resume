@@ -22,35 +22,8 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const { name, email, message } = formData;
-
-    const data = {
-      Messages: [
-        {
-          From: {
-            Email: "your-email@example.com",
-            Name: "Your Name",
-          },
-          To: [
-            {
-              Email: "graphics.collinsabu01@gmail.com",
-              Name: "Collins Abu",
-            },
-          ],
-          Subject: `New message from ${name}`,
-          TextPart: message,
-          HTMLPart: `<h3>You've got a new message from your portfolio</h3><p><b>Name: </b>${name}</p><p><b>Email: </b>${email}</p><p><b>Message: </b>${message}</p>`,
-        },
-      ],
-    };
-
     try {
-      const response = await axios.post('https://api.mailjet.com/v3.1/send', data, {
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Basic ${btoa('6160d05a49fa6a7e79b15cc9421fe149:777768315e90810e4e5a40ea868b1889')}`,
-        },
-      });
+      const response = await axios.post('/api/send-email', formData);
 
       if (response.status === 200) {
         alert('Message sent successfully!');
@@ -90,7 +63,6 @@ const Contact = () => {
             <a href="https://api.whatsapp.com/send?phone=+447862772070" target="_blank">Send Message</a>
           </article>
         </div>
-        {/* END OF CONTACT OPTIONS */}
 
         <form onSubmit={handleSubmit}>
           <input type="text" name="name" placeholder="Full Name" value={formData.name} onChange={handleChange} required/>
